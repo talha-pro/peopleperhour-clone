@@ -20,6 +20,9 @@ import camera from "../assets/camera.jpg"
 import agent from "../assets/agent.jpg"
 import shield from "../assets/shield.jpg"
 import flogo from "../assets/flogo.jpg"
+import Linkdin from "../assets/linkedin.svg"
+import Facebook from "../assets/facebook.svg"
+import Twitter from "../assets/twitter.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -36,7 +39,7 @@ const IndexPage = () => (
               Trusted by thousands of businesses globally
             </div>
             <div className="space-2"></div>
-            <div className="companies__cards-wrapper">
+            {/* <div className="companies__cards-wrapper">
               <div className="companies__card ">
                 <div className="companies__number">935,994</div>
                 <div className="companies__text">businesses</div>
@@ -55,7 +58,7 @@ const IndexPage = () => (
                 <div className="space-4"></div>
                 <hr className="companies__line"></hr>
               </div>
-            </div>
+            </div> */}
             <div className="space-2"></div>
             <div className="companies__subtext">Seen on:</div>
             <div className="space-1"></div>
@@ -127,7 +130,7 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="browse__right col-5 container-fluid">
-            <img
+            {/* <img
               className="browse__image-users img-fluid "
               src={users}
               alt="users"
@@ -136,7 +139,7 @@ const IndexPage = () => (
               className="browse__image-user img-fluid "
               src={user}
               alt="user"
-            />
+            /> */}
           </div>
           <div className="space-1"></div>
         </div>
@@ -295,24 +298,29 @@ const IndexPage = () => (
     <section className="funds d-flex align-items-center">
       <div className="funds__container d-flex flex-column align-items-center justify-content-around container">
         <div className="funds__row d-flex flex-column align-items-center row">
-          <div className="funds__content-one col-10">
+          <div className="space-4"></div>
+          <div className="funds__content-one col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
             <div className="funds__image">
               <img className="funds__shield" src={shield} alt="shield" />
             </div>
             {/* <div className="space-1"></div> */}
             <div className="funds__heading-wrapper">
-              <h3>Money Protection</h3>
-              <h2>Your funds are always protected.</h2>
-              <p>
+              <h3 className="funds__heading-three">Money Protection</h3>
+              <h2 className="funds__heading">
+                Your funds are always protected.
+              </h2>
+              <p className="funds__para">
                 Outsource your tasks risk-free on PeoplePerHour and collaborate
                 with freelancers from any country on the planet.
               </p>
-              <p>If there's ever an issue, we'll help you fix it</p>
+              <p className="funds__para">
+                If there's ever an issue, we'll help you fix it
+              </p>
             </div>
           </div>
         </div>
-        <div className="funds__row d-flex justify-content-center row">
-          <div className="funds__content col-4">
+        <div className="funds__row row">
+          <div className="funds__content col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div className="funds__sub-image">
               <img className="funds__lock" src={lock} />
             </div>
@@ -324,7 +332,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="funds__content col-4">
+          <div className="funds__content col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div className="funds__sub-image">
               <img className="funds__camera" src={camera} />
             </div>
@@ -337,7 +345,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="funds__content col-4">
+          <div className="funds__content col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <div className="funds__sub-image">
               <img className="funds__agent" src={agent} />
             </div>
@@ -352,6 +360,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="funds__row row">
+          <div className="space-4"></div>
           <div className="col-12">
             <div className="btn btn-default d-flex align-items-center justify-content-center">
               Join for free
@@ -360,6 +369,7 @@ const IndexPage = () => (
               No upfront payments, no hidden fees.
             </div>
           </div>
+          <div className="space-4"></div>
         </div>
       </div>
     </section>
@@ -432,10 +442,15 @@ const IndexPage = () => (
             </div>
             <div className="space-2"></div>
             <div className="footer__icons-container">
-              <div className="footer__icon">fb</div>
-              <div className="footer__icon">twitter</div>
-              <div className="footer__icon">linkdin</div>
-              <div className="footer__icon">Instagram</div>
+              <a className="footer__icon">
+                <Facebook />
+              </a>
+              <a className="footer__icon">
+                <Linkdin />
+              </a>
+              <a className="footer__icon">
+                <Twitter />
+              </a>
             </div>
             <div className="space-2"></div>
             <div className="footer__terms-container">
