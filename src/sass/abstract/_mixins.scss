@@ -19,7 +19,26 @@
   text-transform: uppercase;
   &:hover {
     color: $accent;
-    border: 1px solid $accent;
+    border: 0.1rem solid $accent;
     background-color: white;
+  }
+}
+
+@mixin secondary-button {
+  width: max-content;
+  padding: 0.1rem 1.2rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: $secondary-high;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid $secondary-high;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0rem 0.1rem 0.5rem 0rem lightgrey;
+    color: $secondary-high;
   }
 }

@@ -3,10 +3,6 @@
   height: max-content;
   background-color: $primary;
 
-  &__row {
-    // border: 1px solid red;
-  }
-
   &__content {
     min-height: 75vh;
     height: max-content;
@@ -20,7 +16,6 @@
   }
 
   &__cards-wrapper {
-    // border: 1px solid red;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -69,23 +64,27 @@
 .browse {
   min-height: 75vh;
   height: max-content;
-  //   background-color: white;
-  border: 1px solid red;
 
-  &__container {
-  }
-
-  &__left {
-    // border: 1px solid red;
+  &__row {
+    margin: 5rem 0rem;
   }
 
   &__right {
-    // border: 1px solid red;
     position: relative;
   }
 
   .btn-default {
     @include accent-button;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .btn-second {
+    @include secondary-button;
   }
 
   &__image-users {
@@ -117,19 +116,9 @@
 .post {
   min-height: 75vh;
   height: max-content;
-  //   background-color: white;
-  border: 1px solid red;
-
-  &__container {
-  }
 
   &__left {
-    // border: 1px solid red;
     position: relative;
-  }
-
-  &__right {
-    // border: 1px solid red;
   }
 
   .btn-default {
@@ -165,22 +154,23 @@
   min-height: 75vh;
   height: max-content;
   background-color: $primary;
-  border: 1px solid red;
-
-  &__container {
-  }
-
-  &__left {
-    // border: 1px solid red;
-  }
 
   &__right {
-    // border: 1px solid red;
     position: relative;
   }
 
   .btn-default {
     @include accent-button;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .btn-second {
+    @include secondary-button;
   }
 
   &__image-cards {
@@ -211,18 +201,8 @@
 .trust {
   min-height: 85vh;
   height: max-content;
-  //   background-color: $primary;
-  border: 1px solid red;
-
-  &__container {
-  }
-
-  &__left {
-    // border: 1px solid red;
-  }
 
   &__right {
-    // border: 1px solid red;
     position: relative;
   }
 
@@ -259,18 +239,8 @@
 .control {
   min-height: 85vh;
   height: max-content;
-  //   background-color: $primary;
-  border: 1px solid red;
-
-  &__container {
-  }
-
-  &__left {
-    // border: 1px solid red;
-  }
 
   &__right {
-    // border: 1px solid red;
     position: relative;
   }
 
@@ -314,6 +284,17 @@
     height: max-content;
   }
 
+  &__content-one {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    margin-right: 5rem;
+  }
+
   &__content {
     display: flex;
     flex-flow: row;
@@ -321,7 +302,161 @@
     justify-content: center;
   }
 
+  &__sub-image {
+    margin-left: 4rem;
+    margin-right: 3rem;
+  }
+
+  &__sub-heading {
+    color: $secondary;
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: $secondary;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
   .btn-default {
     @include accent-button;
+    width: 100%;
+    border-radius: 0.2rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
+    box-shadow: rgba(62, 63, 65, 0.25) 0rem 0.2rem 0.6rem 0rem;
+  }
+
+  &__button-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #98999c;
+    margin-top: 1rem;
+    line-height: 15px;
+  }
+}
+
+.expert {
+  min-height: 40vh;
+  height: max-content;
+  background-color: #ff941a;
+
+  &__heading {
+    color: white !important;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: white !important;
+  }
+
+  .btn-default {
+    @include accent-button;
+    background-color: white;
+    color: #ff941a;
+    margin-top: 4rem;
+    border-radius: 0.2rem;
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    box-shadow: rgba(62, 63, 65, 0.25) 0rem 0.2rem 0.6rem 0rem;
+    &:hover {
+      background-color: $accent;
+      color: white;
+    }
+  }
+
+  &__button-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 1rem;
+    line-height: 15px;
+  }
+}
+
+.footer {
+  min-height: 60vh;
+  height: max-content;
+  background-color: $tertiary;
+
+  &__content {
+    min-height: 60vh;
+    height: max-content;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    color: #ecedef;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.48rem 0rem 1.2rem 0rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    color: #98999c;
+    line-height: 1.95rem;
+    padding: 1.2rem 0rem;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transition: all 0.5s ease;
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__icons-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 25%;
+    width: max-content;
+  }
+
+  &__terms-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 30%;
+    width: max-content;
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    color: #98999c;
+    line-height: 1.95rem;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+    color: #98999c;
+    line-height: 1.95rem;
+    transition: all 0.5s ease;
+    &:hover {
+      transition: all 0.5s ease;
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__copy {
+    font-size: 1.2rem;
+    color: #98999c;
+    line-height: 1.95rem;
   }
 }
