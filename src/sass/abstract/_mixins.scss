@@ -1,0 +1,25 @@
+@mixin buttons-style {
+  color: $tertiary;
+  padding: 0rem;
+  &:hover {
+    color: $accent;
+  }
+}
+
+@mixin accent-button {
+  width: max-content;
+  padding: 1rem 1.5rem;
+  background-color: $accent;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    color: $accent;
+    border: 1px solid $accent;
+    background-color: white;
+  }
+}

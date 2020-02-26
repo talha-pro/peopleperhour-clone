@@ -1,18 +1,72 @@
 .navigation {
-  min-height: 8vh;
+  min-height: 7vh;
   height: max-content;
+  background-color: $primary;
   color: $accent;
   width: 100%;
+  z-index: 100;
+  // position: fixed;
 
-  &__container {
-    border: 1px solid orangered;
+  &__logo {
+    cursor: pointer;
   }
 
   &__buttons {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 40%;
+    min-width: 40%;
+    width: max-content;
+  }
+
+  .btn-default {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
+
+  .post-button {
+    background-color: $accent;
+    color: white;
+    font-weight: 700;
+
+    &:hover {
+      background-color: white;
+      color: $accent;
+      border: 1px solid $accent;
+    }
+  }
+
+  .search {
+    background-color: white;
+    color: $secondary-high;
+    font-weight: 700;
+    border: 1px solid $secondary-high;
+
+    &:hover {
+      color: $secondary-high;
+    }
+  }
+
+  .how {
+    @include buttons-style;
+  }
+
+  .login {
+    @include buttons-style;
+  }
+
+  .signup {
+    @include buttons-style;
+  }
+
+  .freelancer {
+    color: $accent;
+    padding: 0rem;
+    &:hover {
+      color: $accent;
+    }
   }
 }

@@ -34,7 +34,25 @@ body {
 }
 
 h2 {
+  font-size: 3.88rem !important;
+  font-weight: 500 !important;
+  line-height: 5rem !important;
+  text-align: left !important;
+  color: $secondary !important;
+}
+
+h3 {
+  font-size: 1.87rem !important;
+  font-weight: 600 !important;
+  line-height: 2.89rem !important;
+  text-align: left !important;
+  color: $secondary !important;
 }
 
 p {
+  font-size: 1.56rem !important;
+  font-weight: 600 !important;
+  line-height: 2.4rem !important;
+  text-align: left !important;
+  color: $secondary !important;
 }
