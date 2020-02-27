@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/Header"
+import santamaria from "../assets/santamaria.jpg"
 import bbc from "../assets/bbc.jpg"
 import insider from "../assets/insider.jpg"
 import cnbc from "../assets/cnbc.jpg"
@@ -30,7 +30,36 @@ import Twitter from "../assets/twitter.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Hileets" />
-    <Header />
+
+    <section className="header d-flex align-items-center">
+      <div className="header__container container">
+        <div className="header__row row">
+          <div className="header__left col-12">
+            <div className="header__heading">Live your work dream</div>
+            <div className="header__text">
+              Our community of expert freelancers gives you the power to find
+              the right person for any project in minutes
+            </div>
+            <div className="space-4"></div>
+            <div className="header__form-wrapper">
+              <input
+                className="header__email"
+                type="email"
+                placeholder="Search for any skill"
+                required
+              ></input>
+              <div className="btn btn-default d-flex align-items-center justify-content-center">
+                Find your expert&nbsp;
+                <div className="header__glyph">&rarr;</div>
+              </div>
+            </div>
+            <div className="header__subtext">
+              Browse for free, no sign up required
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section className="companies d-flex align-items-center">
       <div className="companies__container container">
@@ -42,7 +71,7 @@ const IndexPage = () => (
               Trusted by thousands of businesses globally
             </div>
             <div className="space-2"></div>
-            {/* <div className="companies__cards-wrapper">
+            <div className="companies__cards-wrapper">
               <div className="companies__card ">
                 <div className="companies__number">935,994</div>
                 <div className="companies__text">businesses</div>
@@ -61,10 +90,9 @@ const IndexPage = () => (
                 <div className="space-4"></div>
                 <hr className="companies__line"></hr>
               </div>
-            </div> */}
+            </div>
             <div className="space-2"></div>
             <div className="companies__subtext">Seen on:</div>
-            <div className="space-1"></div>
             <div className="companies__logo-wrapper">
               <img className="companies__logo" src={bbc} />
               <img className="companies__logo" src={insider} />
