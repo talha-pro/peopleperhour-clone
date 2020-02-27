@@ -37,22 +37,62 @@ h2 {
   font-size: 3.88rem !important;
   font-weight: 500 !important;
   line-height: 5rem !important;
-  text-align: left !important;
+  z-index: 200 !important;
   color: $secondary !important;
+
+  @media (max-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
+
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 }
 
 h3 {
   font-size: 1.87rem !important;
   font-weight: 600 !important;
   line-height: 2.89rem !important;
-  text-align: left !important;
   color: $secondary !important;
+
+  @media (max-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
 }
 
 p {
   font-size: 1.56rem !important;
   font-weight: 600 !important;
   line-height: 2.4rem !important;
-  text-align: left !important;
   color: $secondary !important;
+
+  @media (max-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 576px) {
+    text-align: center !important;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
 }

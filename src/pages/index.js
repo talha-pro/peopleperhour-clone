@@ -11,10 +11,13 @@ import indepen from "../assets/indepen.jpg"
 import users from "../assets/users.png"
 import user from "../assets/user.png"
 import mobile from "../assets/mobile.png"
-import mobileview from "../assets/mobile.png"
+import mobileview from "../assets/mobileview.png"
 import cards from "../assets/cards.png"
+import card from "../assets/card.png"
 import multicomments from "../assets/multicomments.png"
+import comment from "../assets/comment.png"
 import reviews from "../assets/reviews.png"
+import review from "../assets/review.png"
 import lock from "../assets/lock.jpg"
 import camera from "../assets/camera.jpg"
 import agent from "../assets/agent.jpg"
@@ -79,10 +82,9 @@ const IndexPage = () => (
     <section className="browse d-flex align-items-center">
       <div className="browse__container container">
         <div className="browse__row row">
-          <div className="browse__left col-5">
+          <div className="browse__left col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h3>Discover Freelancers</h3>
-            <h2>Hire in minutes</h2>
-            <h2> Pay per hour</h2>
+            <h2>Hire in minutes Pay per hour</h2>
             <div className="space-1"></div>
             <p>
               PeoplePerHour connects your business to an international community
@@ -129,8 +131,8 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="browse__right col-5 container-fluid">
-            {/* <img
+          <div className="browse__right col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 container-fluid">
+            <img
               className="browse__image-users img-fluid "
               src={users}
               alt="users"
@@ -139,7 +141,7 @@ const IndexPage = () => (
               className="browse__image-user img-fluid "
               src={user}
               alt="user"
-            /> */}
+            />
           </div>
           <div className="space-1"></div>
         </div>
@@ -150,14 +152,19 @@ const IndexPage = () => (
       <div className="post__container container">
         <div className="post__row row">
           <div className="space-4"></div>
-          <div className="post__left col-6 container-fluid">
+          <div className="post__left col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 container-fluid">
             <img
               className="post__image-mobile img-fluid"
               src={mobile}
               alt="mobile"
             />
+            <img
+              className="post__image-mobileview img-fluid"
+              src={mobileview}
+              alt="mobile"
+            />
           </div>
-          <div className="post__right col-5">
+          <div className="post__right col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h3>Let freelancers discover you</h3>
             <h2>Post projects quickly, receive responses even quicker.</h2>
             <div className="space-1"></div>
@@ -183,7 +190,7 @@ const IndexPage = () => (
       <div className="offer__container container">
         <div className="offer__row row">
           <div className="space-4"></div>
-          <div className="offer__left col-5">
+          <div className="offer__left col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h3>Explore Offers</h3>
             <h2 className="offer__heading">Discover fixed price offers.</h2>
             <div className="space-1"></div>
@@ -232,8 +239,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="offer__right col-7 container-fluid">
+          <div className="offer__right col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 container-fluid">
             <img className="offer__image-cards img-fluid" src={cards} />
+            <img className="offer__image-card img-fluid" src={card} />
           </div>
         </div>
         <div className="space-4"></div>
@@ -244,13 +252,14 @@ const IndexPage = () => (
       <div className="trust__container container">
         <div className="trust__row row">
           <div className="space-4"></div>
-          <div className="trust__left col-8 container-fluid">
+          <div className="trust__left col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 container-fluid">
             <img
               className="trust__image-comments img-fluid"
               src={multicomments}
             />
+            <img className="trust__image-comment img-fluid" src={comment} />
           </div>
-          <div className="trust__right col-4">
+          <div className="trust__right col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <h3>Trusted Experts</h3>
             <h2 className="trust__heading">
               Trust our experts to help grow your business.
@@ -276,7 +285,7 @@ const IndexPage = () => (
       <div className="control__container container">
         <div className="control__row row">
           <div className="space-4"></div>
-          <div className="control__left col-5">
+          <div className="control__left col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h3>Stay in control, keep in touch</h3>
             <h2>Collaborate with ease, and speed.</h2>
             <div className="space-1"></div>
@@ -287,8 +296,9 @@ const IndexPage = () => (
             </p>
             <p>Make drowning in admin a thing of the past.</p>
           </div>
-          <div className="control__right col-7 container-fluid">
+          <div className="control__right col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 container-fluid">
             <img className="control__image-reviews img-fluid" src={reviews} />
+            <img className="control__image-review img-fluid" src={review} />
           </div>
         </div>
         <div className="space-4"></div>
