@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `People Per Hour Clone`,
     description: `People Per Hour Clone.`,
-    author: `hileets`,
+    author: `Talha`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
